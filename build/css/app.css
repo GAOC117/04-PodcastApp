@@ -12099,3 +12099,14 @@ textarea.form-control-lg {
     font-size: 6rem;
   }
 }
+
+.crea-podcast h2 {
+  color: #313C4E;
+}
+.crea-podcast h2::after {
+  content: "";
+  height: 1rem;
+  width: 100%;
+  background-color: #84D9BC;
+  display: block;
+}

@@ -4,3 +4,15 @@
     background-size: cover;
     background-position: top center;
 }
+
+@mixin headingBorder($colorTexto, $colorLinea){
+    color: $colorTexto;
+
+    &::after{
+        content: '';
+        height: 1rem;
+        width: 100%;
+        background-color: $colorLinea;
+        display: block;
+    }
+}
