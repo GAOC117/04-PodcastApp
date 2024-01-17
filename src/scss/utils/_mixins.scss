@@ -1,3 +1,5 @@
+@use '../custom' as *;
+
 @mixin bgImage($url, $color){
     background-image: linear-gradient(transparentize($color, 0.3%) 0%, $color 100%), url($url);
     background-repeat: no-repeat;
@@ -7,6 +9,12 @@
 
 @mixin headingBorder($colorTexto, $colorLinea){
     color: $colorTexto;
+    display: inline-block;
+    margin-top: 5rem;
+
+    @include media-breakpoint-up(md){
+            margin-top: 0;
+    }
 
     &::after{
         content: '';
@@ -14,5 +22,6 @@
         width: 100%;
         background-color: $colorLinea;
         display: block;
+        margin: -1.4rem 0 0 0;
     }
 }
