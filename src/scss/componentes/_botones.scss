@@ -24,5 +24,11 @@
   border: solid 1px $white;
   @include media-breakpoint-up(md){
     display: block;
+    padding-left: 0;
+    padding-right: 0;
+   
   }
+
+
+
 }
