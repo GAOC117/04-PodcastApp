@@ -12,9 +12,17 @@
   @include button-size(1rem, 5rem, 2rem, 0);
   font-weight: 700;
   display: block;
-  margin-top: 2rem;
+  margin-top: 1rem;
 
   @include media-breakpoint-up(md){
     display: inline-block;
+  }
+}
+
+.boton-plan{
+  @extend .btn-header;
+  border: solid 1px $white;
+  @include media-breakpoint-up(md){
+    display: block;
   }
 }
